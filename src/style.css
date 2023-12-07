@@ -1,8 +1,11 @@
+* {
+  box-sizing: border-box;
+}
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
@@ -16,12 +19,16 @@
 body {
   margin: 0;
   height: 100vh;
+  background-color: #e2e8f0;
 }
 
 #app {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
+  display: grid;
+  place-items: start center;
+  padding: 0 1rem;
 }
 
 
