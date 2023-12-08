@@ -20,12 +20,13 @@ body {
   margin: 0;
   height: 100vh;
   background-color: #e2e8f0;
+  overflow: hidden;
 }
 
 #app {
   width: 100vw;
   height: 100vh;
-  overflow: hidden;
+  overflow-y: auto;
   display: grid;
   place-items: start center;
   padding: 0 1rem;

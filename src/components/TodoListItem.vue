@@ -1,11 +1,20 @@
 <script setup>
+import {useTodoStore} from "../stores/todoStore.js";
+const todoStore = useTodoStore();
 
+const props = defineProps({
+  todo: Object,
+})
+
+async function deleteTodo(){
+  await todoStore.removeTodoAction(props.todo.id);
+}
 </script>
 
 <template>
   <li class="todo-list__item">
-    <div class="todo-item__name">Item1</div>
-    <button class="todo-item__delete-btn">Sil</button>
+    <div class="todo-item__name">{{todo.name}}</div>
+    <button class="todo-item__delete-btn" @click="deleteTodo">{{ $t('deleteButton') }}</button>
   </li>
 </template>
 

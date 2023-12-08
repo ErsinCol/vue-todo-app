@@ -1,10 +1,23 @@
 <script setup>
+import {ref} from "vue";
+import {useTodoStore} from "../stores/todoStore.js";
+
+const todoStore = useTodoStore();
+const todoName = ref("");
+
+async function addTodo(){
+  const todo = {
+    name : todoName.value
+  }
+  await todoStore.addTodoAction(todo)
+  todoName.value = "";
+}
 
 </script>
 
 <template>
   <section class="todo-app__add-section">
-    <input class="add-section__input-field" type="text" placeholder="Bir şeyler yazabilirsiniz...">
+    <input class="add-section__input-field" type="text" :placeholder="`${$t('inputPlaceholder')}`" v-model="todoName" @keydown.enter="addTodo">
   </section>
 </template>
 
