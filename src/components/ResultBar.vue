@@ -4,11 +4,11 @@ const todoStore = useTodoStore();
 </script>
 
 <template>
-  <small class="todo-app__result-bar">{{todoStore.getTodoCount}} {{ $t('resultBar')}}</small>
+  <small class="list-section__result-bar">{{todoStore.getTodoCount}} {{ $t('resultBar')}}</small>
 </template>
 
 <style scoped>
-.todo-app__result-bar {
+.list-section__result-bar {
   display: block;
   color: #0ea5e9;
   font-weight: 600;

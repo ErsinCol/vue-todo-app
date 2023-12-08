@@ -20,7 +20,7 @@ import LanguagePicker from "./components/LanguagePicker.vue";
 
 <style scoped>
 .todo-app {
-  margin: 3rem 0;
+  margin-top: 3rem;
   width: min(40rem, 100%);
 }
 

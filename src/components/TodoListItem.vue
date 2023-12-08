@@ -13,8 +13,8 @@ async function deleteTodo(){
 
 <template>
   <li class="todo-list__item">
-    <div class="todo-item__name">{{todo.name}}</div>
-    <button class="todo-item__delete-btn" @click="deleteTodo">{{ $t('deleteButton') }}</button>
+    <div class="item__name">{{todo.name}}</div>
+    <button class="item__delete-btn" @click="deleteTodo">{{ $t('deleteButton') }}</button>
   </li>
 </template>
 
@@ -30,11 +30,11 @@ async function deleteTodo(){
   justify-content: space-between;
 }
 
-.todo-item__name {
+.item__name {
   color: #334155;
 }
 
-.todo-item__delete-btn {
+.item__delete-btn {
   background-color: #ef4444;
   color: white;
   border: transparent;
@@ -43,7 +43,7 @@ async function deleteTodo(){
   cursor: pointer;
 }
 
-.todo-item__delete-btn:hover {
+.item__delete-btn:hover {
   background-color: #dc2626;
 }
 </style>

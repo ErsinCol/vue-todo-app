@@ -15,13 +15,13 @@ onMounted(async ()=>{
 </script>
 
 <template>
-  <ul class="todo-list">
+  <ul class="list-section__todo-list">
     <TodoListItem v-for="todo in todos" :key="todo.name" :todo="todo"/>
   </ul>
 </template>
 
 <style scoped>
-.todo-list {
+.list-section__todo-list {
   list-style-type: none;
   padding: 0 0.75rem;
   height: 30rem;
