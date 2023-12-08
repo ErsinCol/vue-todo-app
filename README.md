@@ -42,12 +42,12 @@ The application is structured using a component-based architecture. Key componen
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/ErsinCol/vue-list-app.git
+git clone https://github.com/ErsinCol/vue-todo-app.git
 ```
 
 2. Navigate to the project directory:
 ```bash
-cd vue-list-app
+cd vue-todo-app
 ```
 
 3. Install dependencies:
