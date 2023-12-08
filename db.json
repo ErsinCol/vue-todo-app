@@ -1,8 +1,28 @@
 {
   "todos": [
     {
-      "name": "markete git",
-      "id": 1
+      "name": "Ekmek, süt, yumurta, sebze, meyve al.",
+      "id": 2
+    },
+    {
+      "name": "30 dakika koşu veya yürüyüş.",
+      "id": 3
+    },
+    {
+      "name": "Proje güncellemelerini paylaş.",
+      "id": 4
+    },
+    {
+      "name": "Aylık performans raporunu oluştur.",
+      "id": 5
+    },
+    {
+      "name": "Deterjan, tuvalet kağıdı, temizlik bezi al.",
+      "id": 6
+    },
+    {
+      "name": "Günlük dil çalışması yap.",
+      "id": 7
     }
   ]
 }

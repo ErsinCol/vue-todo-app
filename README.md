@@ -3,7 +3,7 @@
 This is a simple Todo List application built with Vue.js.
 
 ### Screenshots
-![list-app]()
+![list-app](project-image.png)
 
 ### Technologies and Libraries Used
 
